@@ -56,7 +56,7 @@ $(document).on('click', '.about', function() {
   <ul>
     <li class="active"><a href="#">Početna</a></li>
     <li><a href="#" class="about">O </a></li>
-    <li><a href="konvertor.zip">Download</a></li>
+    <li><a href="https://github.com/lukapaunovic/preslovljavanje">GitHub</a></li>
     <li><a href="mailto:internetfazoni@gmail.com">Kontakt</a></li>
   </ul>
 </nav>
