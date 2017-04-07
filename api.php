@@ -111,7 +111,7 @@ header('Content-Type: application/json');
 echo json_encode($arr, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE); 
     
 } else {
-	$arr = array("status"=>'a da odjebeš malo?');
+	$arr = array("status"=>'Nedozvoljen pristup!');
 	header('Content-Type: application/json');	
 	echo json_encode($arr, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE); 
 }
