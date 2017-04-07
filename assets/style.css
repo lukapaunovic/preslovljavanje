@@ -65,6 +65,8 @@ li.active a {
     padding: 10px;
     max-height: 200px;
     overflow: auto;
+    white-space: pre-line;
+    word-wrap: break-word;
 }
 
 .centar {
