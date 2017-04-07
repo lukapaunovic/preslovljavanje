@@ -36,13 +36,21 @@ if (vrsta == "lat") {
 	var type = "cyr";
 }
 
-var ajax_url = "api.php?type=" + type + "&text=" + text;
-
 if (!!text) {
-    $.get(ajax_url, function(data) {
-
+    
+    $.ajax({
+        type: 'POST',
+        url: 'api.php',
+        data: {
+            type: type,
+            text: text
+        },
+        success: function(data) {
 $("#rezultat").html(data.text);
-    });
+        }
+    })
+
+    
     }
 	});
 	
