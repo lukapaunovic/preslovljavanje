@@ -98,21 +98,18 @@ if(($type!=false) && ($text!=false)) {
 $SrLatin = new SrLatin();
     
     if($type=="lat") {
-$text = $SrLatin->convert_lat($text);
-       
+    	$text = $SrLatin->convert_lat($text);
     }
     
     if($type=="cyr") {
-$text = $SrLatin->convert_cyr($text);
+    	$text = $SrLatin->convert_cyr($text);
     }
     
     $arr = array("text"=>$text);
-header('Content-Type: application/json');	
-echo json_encode($arr, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE); 
-    
+    header('Content-Type: application/json');
+    echo json_encode($arr, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 } else {
 	$arr = array("status"=>'Nedozvoljen pristup!');
 	header('Content-Type: application/json');	
 	echo json_encode($arr, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE); 
 }
-?>
