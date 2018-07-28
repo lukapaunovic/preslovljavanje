@@ -95,7 +95,7 @@ class SrLatin {
 }
 
 if(($type!=false) && ($text!=false)) {
-$SrLatin = new SrLatin();
+	$SrLatin = new SrLatin();
     
     if($type=="lat") {
     	$text = $SrLatin->convert_lat($text);
